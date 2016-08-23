@@ -510,6 +510,7 @@ void MAF::set_validation_fsa(FSA_Simple * fsa)
 
 bool MAF::is_valid_equation(String *reason,const Word &lhs,const Word & rhs) const
 {
+    /*
   if (is_rubik)
   {
     String_Buffer sb1,sb2;
@@ -521,7 +522,7 @@ bool MAF::is_valid_equation(String *reason,const Word &lhs,const Word & rhs) con
       return false;
     }
   }
-
+    */
   if (validator)
   {
     Ordinal_Word lhs_word(group_alphabet());
